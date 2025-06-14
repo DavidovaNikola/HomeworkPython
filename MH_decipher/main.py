@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import unicodedata
 from pathlib import Path
-from kryptolib import (
+from MH_decipher.kryptolib import (
     alphabet, generate_random_key, substitute_encrypt, substitute_decrypt,
     score_by_dictionary, create_ngram_log_prob_model, prolom_substitute_hybrid,
     get_ngrams
@@ -164,7 +164,7 @@ print("Decrypted:", decrypted)
 print("Debug: Starting analysis...")
 print("Encrypted text:", encrypted)
 
-from kryptolib import score_by_dictionary
+from MH_decipher.kryptolib import score_by_dictionary
 
 # Pokud není WORDLIST_SET definován, načti jej ze souboru
 if 'WORDLIST_SET' not in globals():
